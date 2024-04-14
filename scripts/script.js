@@ -10,7 +10,7 @@ new Vue({
       isTimerPlaying: false,
       tracks: [
         {
-          name: "TATTOO МАСТЕР (DRILL VERSION)",
+          name: "TATTOO МАСТЕР",
           artist: "KO$HMAR",
           cover: "./img/ko$hmar.jpg",
           source: "./mp3/tattoo.mp3",
@@ -26,10 +26,10 @@ new Vue({
           favorited: false,
         },
         {
-          name: "TATTOO МАСТЕР (GRIME VERSION)",
+          name: "СЫН АЗЕРОТА",
           artist: "KO$HMAR",
           cover: "./img/ko$hmar.jpg",
-          source: "./mp3/tattoo_v2.mp3",
+          source: "./mp3/azeroth.mp3",
           url: "#",
           favorited: false,
         },

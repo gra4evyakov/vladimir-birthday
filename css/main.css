@@ -1,5 +1,5 @@
 body {
-  background-image: url(../img/fire.jpg);
+  background-image: url(../img/fire-gif.gif);
   height: 100dvh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -166,7 +166,7 @@ body {
     font-size: 26px;
     padding: 5px;
     margin-right: 10px;
-    color: #acb8cc;
+    color: white;
     cursor: pointer;
     width: 40px;
     height: 40px;
@@ -280,7 +280,7 @@ body {
 }
 
 .album-info {
-  color: #71829e;
+  color: white;
   flex: 1;
   padding-right: 60px;
   user-select: none;
