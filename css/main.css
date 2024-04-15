@@ -12,6 +12,71 @@ body {
   box-sizing: border-box;
 }
 
+.dialog {
+  border: none;
+  border-radius: 20px;
+  inset: 0;
+  position: fixed;
+  z-index: 999;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100dvh;
+  width: 100dvw;
+  background-image: url(../img/fire-gif.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.dialog__text {
+  background-image: none;
+}
+
+.dialog__close {
+  font-family: "Bitter", serif;
+  border-radius: 20px;
+  font-size: 36px;
+  background-color: black;
+  color: white;
+  box-shadow: 0px 0px 15px #460403;
+  border: none;
+  padding-inline: 20px;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+.music__text {
+  height: 100dvh;
+  padding: 12px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 .icon {
   display: inline-block;
   width: 1em;

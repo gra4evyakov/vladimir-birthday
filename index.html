@@ -41,7 +41,7 @@
               </svg>
             </div>
             <a
-              :href="currentTrack.url"
+              @click="textIsOpen = true"
               target="_blank"
               class="player-controls__item"
             >
@@ -82,6 +82,22 @@
         </div>
         <div v-cloak></div>
       </div>
+      <transition name="fade">
+        <div v-if="dialogIsOpen" class="dialog">
+          <button class="dialog__close" @click="dialogIsOpen = false">
+            ЗАКОШМАРИТЬ!?
+          </button>
+        </div>
+      </transition>
+      <transition name="slide-fade">
+        <div v-if="textIsOpen" class="dialog dialog__text">
+          <p
+            v-html="currentTrack.text"
+            class="music__text"
+            @click="textIsOpen = false"
+          ></p>
+        </div>
+      </transition>
     </div>
 
     <svg
