@@ -21,8 +21,11 @@ body {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+
+  text-align: center;
+
+  overflow-y: auto;
 
   height: 100dvh;
   width: 100dvw;
@@ -30,13 +33,17 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
+
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .dialog__text {
   background-image: none;
+  font-size: 28px;
 }
 
 .dialog__close {
+  margin-top: 200px;
   font-family: "Bitter", serif;
   border-radius: 20px;
   font-size: 36px;
@@ -72,9 +79,7 @@ body {
 }
 
 .music__text {
-  height: 100dvh;
   padding: 12px;
-  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .icon {
